@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>123NetStar</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+  <!-- Font Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid cf1">
+      <a class="navbar-brand" href="#">
+        <span class="iconGreen">123</span><span class="iconRed">Net</span><span class="iconBlue">Star</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="justify-content: space-around;">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TV Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <div class="kids"></div>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex me-4" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control search-input" placeholder="Search" aria-describedby="basic-addon2">
+            <span class="input-group-text search-btn" id="basic-addon2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFF" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </span>
+          </div>
+        </form>
+        <button class="btn btn-outline-info me-4 btn-subscribe" type="button">Subscribe</button>
+
+        <div class="dropdown me-4">
+          <button class="btn btn-secondary dropdown-toggle account-profile-btn" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <div style="opacity: .7; padding-right: 5px;">
+              <i class="btn btn-outline-light bi bi-person"></i>
+            </div>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i>Manage Profiles</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle me-2"></i>Account</a></li>
+            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left me-2"></i>Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="content">
+      <div class="alert alert-success alert-top" role="alert">
+        <i class="bi bi-info-circle-fill me-2"></i>
+        <div>
+          New 4k movies updated! Check in Latest Update.
+        </div>
+      </div>
+      <div class="asdfAlignment">
+        <div id="carouselExampleInterval" class="carousel slide cs-content" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/7287/817287-h"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4367/1034367-h-7a093757f367"
+                class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4402/754402-h"
+                class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div>
+        <h3 style="color: white; margin: 12px 8px;" class="mt-5">Latest Series and Movies</h3>
+
+        <!-- Card -->
+        <div class="cards">
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalSPYX">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4158/1364158-v-55df0f92d16d"
+                class="card-img" alt="...">
+            </a>
+          </div>
+
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalMF">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7288/817288-v"
+                class="card-img" alt="...">
+            </a>
+          </div>
+
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalPENGAB">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5813/755813-v"
+                class="card-img" alt="...">
+            </a>
+          </div>
+
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalThor">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8299/1328299-v-41830f478c3f"
+                class="card-img" alt="...">
+            </a>
+          </div>
+
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalDrAneh">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9946/1279946-v-e840df4196c6"
+                class="card-img" alt="...">
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div>
+        <h3 style="color: white; margin: 12px 8px;" class="mt-5">Trending</h3>
+        <div class="cards mt-3">
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalOther">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8388/1358388-v-e6255c3c5499"
+                class="card-img" alt="...">
+            </a>
+          </div>
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalOther">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/773/1390773-v-ef1fd6fcc03c"
+                class="card-img" alt="...">
+            </a>
+          </div>
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalOther">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8377/1358377-v-c37abbaf2209"
+                class="card-img" alt="...">
+            </a>
+          </div>
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalOther">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/816/1050816-v-b2ed5b86c11f"
+                class="card-img" alt="...">
+            </a>
+          </div>
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalOther">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2648/1352648-v-65a216866794"
+                class="card-img" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="color: white; margin: 12px 8px;" class="mt-5">Kids</h3>
+        <div class="cards mt-3">
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalOther">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/335/1020335-v-16c6b2f9d574"
+                class="card-img" alt="...">
+            </a>
+          </div>
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalOther">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7293/1327293-v-b247dbec8d01"
+                class="card-img" alt="...">
+            </a>
+          </div>
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalOther">
+              <img
+                src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2312/1172312-v-e5e4c942f816"
+                class="card-img" alt="...">
+            </a>
+          </div>
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalOther">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7422/727422-v"
+                class="card-img" alt="...">
+            </a>
+          </div>
+          <div class="card text-bg-dark" style="width: 18rem;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalOther">
+              <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4362/744362-v"
+                class="card-img" alt="...">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="insideFooter">
+          <div style="display: flex;">
+            <a style="padding: 0px 16px; text-decoration: none; color: white;" href="#">About 123NetStar</a>
+            <a style="padding: 0px 16px; text-decoration: none; color: white;" href="#">No Term just me</a>
+            <a style="padding: 0px 16px; text-decoration: none; color: white;" href="#">No Privacy Policy</a>
+          </div>
+          <div>
+            <a href="contactus.html" style="text-decoration: none; color: white;">CONTACT US</a>
+          </div>
+          <div>Connect with us</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Spy X Family -->
+  <div class="modal fade" id="modalSPYX" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Spy X Family</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Modal Content -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Animation</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Spy x Family</li>
+            </ol>
+          </nav>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/4158/1364158-v-55df0f92d16d"
+            alt="" width="50%">
+          <div>
+            <p>Twilight, a highly-skilled spy, is assigned to uncover the movements of a dangerous figure in the East
+              who threatens the peace.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="https://youtu.be/ofXigq9aIpo" role="button" class="btn btn-primary">Watch trailer</a>
+          <button type="button" class="btn btn-primary disabled"><i class="bi bi-play-circle"></i>
+            Watch Season 1 Episode
+            1</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MF -->
+  <div class="modal fade" id="modalMF" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modern Family</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Modal Content -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Series</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Modern Family</li>
+            </ol>
+          </nav>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7288/817288-v"
+            alt="" width="50%">
+          <div>
+            <p>WATCH THE COMPLETE SEASONS 1-11. Jay has grown children, grandchildren and a gorgeous young wife with a
+              preteen son of her own. Together, they must bridge generational and cultural gaps.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" role="button" class="btn btn-primary">Watch trailer</a>
+          <button type="button" class="btn btn-primary disabled"><i class="bi bi-play-circle"></i>
+            Watch Season 1 Episode
+            1</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pengab -->
+  <div class="modal fade" id="modalPENGAB" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Satan Slave</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Modal Content -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Movies</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Satan Slave</li>
+            </ol>
+          </nav>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5813/755813-v"
+            alt="" width="50%">
+          <div>
+            <p>After being mysteriously ill for almost 3 years, mother finally passes away. Dad then leaves town for a
+              job leaving the kids all alone. Soon, the children sense that mother has come back to the house.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" role="button" class="btn btn-primary">Watch trailer</a>
+          <button type="button" class="btn btn-primary disabled"><i class="bi bi-play-circle"></i>
+            Watch Movie</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Thor -->
+  <div class="modal fade" id="modalThor" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Thor Love and Thunder</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Modal Content -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Movies</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Thor Love and Thunder</li>
+            </ol>
+          </nav>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8299/1328299-v-41830f478c3f"
+            alt="" width="50%">
+          <div>
+            <p>The God of Thunder teams up with King Valkyrie, Korg and ex-girlfriend-turned-Mighty-Thor Jane Foster to
+              take on a galactic killer known as Gorr the God Butcher.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" role="button" class="btn btn-primary">Watch trailer</a>
+          <button type="button" class="btn btn-primary disabled"><i class="bi bi-play-circle"></i>
+            Watch Movie</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Dr Strange -->
+  <div class="modal fade" id="modalDrAneh" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Doctor Strange Multiverse of Madness</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Modal Content -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Movies</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Doctor Strange Multiverse of Madness</li>
+            </ol>
+          </nav>
+          <img
+            src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9946/1279946-v-e840df4196c6"
+            alt="" width="50%">
+          <div>
+            <p>When the Multiverse is unlocked, Doctor Strange must enlist help from old and new allies in order to
+              confront a surprising adversary.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" role="button" class="btn btn-primary">Watch trailer</a>
+          <button type="button" class="btn btn-primary disabled"><i class="bi bi-play-circle"></i>
+            Watch Movie</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- for every modal left -->
+  <div class="modal fade" id="modalOther" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Movies or Series</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Modal Content -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Other</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Other</li>
+            </ol>
+          </nav>
+          <img
+            src="https://s.studiobinder.com/wp-content/uploads/2017/12/Movie-Poster-Template-Dark-with-Image.jpg?x81279"
+            alt="" width="50%">
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam repellendus cum id quaerat excepturi
+              ipsam dolore non placeat, ut maxime eveniet possimus esse magni blanditiis fugit vero nostrum? Modi,
+              quibusdam?</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" role="button" class="btn btn-primary">Watch trailer</a>
+          <button type="button" class="btn btn-primary disabled"><i class="bi bi-play-circle"></i>
+            Watch Movie</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+* {
+    color: white;
+}
+
+.belowNavbar {
+    padding: 12px 32px;
+}
+
+.firstContainer {
+    margin-top: 64px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.cContent {
+    width: 420px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 12px 64px;
+}

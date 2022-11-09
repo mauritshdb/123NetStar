@@ -1,0 +1,128 @@
+body {
+    background-color: #0c111b;
+  }
+
+  .kids {
+    position: relative;
+    bottom: -4px;
+    width: 40px;
+    height: 15px;
+    background: url(../img/iconKids.svg);
+  }
+
+  .iconGreen {
+    color: green;
+  }
+
+  .iconRed {
+    color: #E50914;
+  }
+
+  .iconBlue {
+    background-color: rgb(1, 20, 124);
+    background-color: linear-gradient(0deg, rgba(1, 20, 124, 1) 25%, rgba(0, 0, 253, 1) 75%);
+  }
+
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  img {
+    border-radius: 5%;
+  }
+
+  .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    font-style: normal;
+    ;
+  }
+
+  .cf1 {
+    margin: 6px 0px 0px;
+    padding: 0px 50px;
+  }
+
+  .search-input {
+    border-top-color: transparent;
+    border-bottom-color: white;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+  }
+
+  .search-btn {
+    border: none;
+    border-radius: none;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: .7;
+  }
+
+  .account-profile-btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+
+  }
+
+  @media screen and (max-width:992px) {
+    .d-flex .subscrible-btn {
+      margin-bottom: 3px;
+    }
+
+    /* .card {
+      width: 15rem;
+    } */
+  }
+
+  /* @media screen and (max-width:770px) {
+    .card {
+      width: 12rem;
+    }
+  } */
+
+  .alert-top {
+    display: flex;
+    margin-top: 8px;
+  }
+
+  .cs-content {
+    width: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .asdfAlignment {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .7);
+    margin: 0px 0px;
+    padding: 0px 0px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer {
+    display: block;
+    justify-content: center;
+    height: 150px;
+    background-color: rgba(0, 0, 0, .3);
+    margin: 32px 0px 1px 0px;
+    padding: 48px 0px 0px 0px;
+  }
+
+  .insideFooter {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-decoration: none;
+  }
