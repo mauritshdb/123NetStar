@@ -2,9 +2,6 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>123NetStar</title>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/style/styles.css">
+  <script src="assets/scripts/script1.js"></script>
 </head>
 
 <body>
@@ -63,19 +61,23 @@
             </span>
           </div>
         </form>
-        <button class="btn btn-outline-info me-4 btn-subscribe" type="button">Subscribe</button>
+        <button class="btn btn-outline-info me-4 btn-subscribe" type="button" id="subsBtn" data-bs-toggle="button"
+          onclick="changeSubBtn()">Subscribe</button>
 
         <div class="dropdown me-4">
-          <button class="btn btn-secondary dropdown-toggle account-profile-btn" type="button" data-bs-toggle="dropdown"
+          <button class="btn btn-secondary dropdown-toggle account-profile-btn" type="button"
             aria-expanded="false">
             <div style="opacity: .7; padding-right: 5px;">
               <i class="btn btn-outline-light bi bi-person"></i>
             </div>
           </button>
           <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-lg-end">
-            <li><a class="dropdown-item" href="#"><i class="bi bi-pencil me-2"></i>Manage Profiles</a></li>
-            <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle me-2"></i>Account</a></li>
-            <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-left me-2"></i>Sign out</a></li>
+            <li><a class="dropdown-item" href="#" onclick="tst('Manage profiles')"><i
+                  class="bi bi-pencil me-2"></i>Manage Profiles</a></li>
+            <li><a class="dropdown-item" href="#" onclick="tst('Account')"><i
+                  class="bi bi-person-circle me-2"></i>Account</a></li>
+            <li><a class="dropdown-item" href="#" onclick="tst('Sign Out')"><i
+                  class="bi bi-box-arrow-left me-2"></i>Sign out</a></li>
           </ul>
         </div>
       </div>
@@ -248,9 +250,9 @@
       <div class="footer">
         <div class="insideFooter">
           <div style="display: flex;">
-            <a style="padding: 0px 16px; text-decoration: none; color: white;" href="#">About 123NetStar</a>
-            <a style="padding: 0px 16px; text-decoration: none; color: white;" href="#">No Term just me</a>
-            <a style="padding: 0px 16px; text-decoration: none; color: white;" href="#">No Privacy Policy</a>
+            <a class="aASD" href="#">About 123NetStar</a>
+            <a class="aASD" href="#">No Term just me</a>
+            <a class="aASD" href="#">No Privacy Policy</a>
           </div>
           <div>
             <a href="contactus.html" style="text-decoration: none; color: white;">CONTACT US</a>
@@ -471,6 +473,7 @@
       </div>
     </div>
   </div>
+
 
 </body>
 
