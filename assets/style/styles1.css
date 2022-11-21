@@ -19,3 +19,18 @@
     background-color: rgba(0, 0, 0, 0.4);
     padding: 12px 64px;
 }
+
+.secondContainer {
+    margin-top: 64px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.xContent {
+    width: 420px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 32px 16px;
+    padding: 16px 16px;
+
+}
